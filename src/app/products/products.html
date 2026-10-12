@@ -1,0 +1,19 @@
+<h1>Our Products</h1>
+
+<div class="products-container">
+
+    @for (product of products; track product.id) {
+
+    <div class="product-card">
+
+        <h2>{{ product.name }}</h2>
+
+        <p>Price: {{ product.price }} GEL</p>
+
+        <p>Category: {{ product.category }}</p>
+
+    </div>
+
+    }
+
+</div>
